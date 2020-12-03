@@ -1,0 +1,5 @@
+pandas
+glob
+os
+matplotlib
+wordcloud
