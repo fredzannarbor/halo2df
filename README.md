@@ -3,7 +3,7 @@ loads Amazon Halo user data into Pandas dataframe &amp; runs analyses
 
 The script will iterate over your personal health data, import each dataset into an appropriate dataframe, and carry out some analysis.
 
-Version 1.0 of this script only analyzes the Tone Utterance and turns it into a wordcloud.
+Version 1.0 of this script  analyzes only the Tone Utterance data and turns it into a wordcloud. Future versions will support other data sets and carry out other visualizations.
 
 ## Requirements
 
