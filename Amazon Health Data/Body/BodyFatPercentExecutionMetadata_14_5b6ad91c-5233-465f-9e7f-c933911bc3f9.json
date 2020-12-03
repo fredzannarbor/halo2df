@@ -1,0 +1,30 @@
+{
+    "TimeOfScan": "2020-10-31T20:35:29.982000Z",
+    "HumanDetectionScanResults": [],
+    "ScanResults": {
+        "BodyFatScore": 36.56964874267578,
+        "ScanRequirementAdherence": "MET"
+    },
+    "UserProfileData": {
+        "ethnicity": {
+            "unit": "N/A",
+            "value": "White"
+        },
+        "gender": {
+            "unit": "N/A",
+            "value": "male"
+        },
+        "weight": {
+            "unit": "lb",
+            "value": 268.9970397949219
+        },
+        "age": {
+            "unit": "year",
+            "value": 59
+        },
+        "height": {
+            "unit": "in",
+            "value": 74
+        }
+    }
+}

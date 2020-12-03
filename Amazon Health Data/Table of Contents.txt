@@ -1,0 +1,13 @@
+.-----------------------------------------------------------------------------------------------------------------------.
+|     File Title      |                                        File Description                                         |
+|---------------------|-------------------------------------------------------------------------------------------------|
+| Activity            | This file contains your activity and fitness data                                               |
+| Body                | This file contains your Body data                                                               |
+| Labs                | This file contains your Labs data                                                               |
+| Membership          | This file contains the data associated with your membership                                     |
+| PrivacySettings     | This file contains the data associated with your opt in our out of cloud backup for body images |
+| ProfileInformation  | This file contains your demographic data                                                        |
+| ProfileVerification | This file contains the data associated with your claim credentials used to verify your profile  |
+| Sleep               | This file contains your sleep data                                                              |
+| Tone                | This file contains your Tone data                                                               |
+'-----------------------------------------------------------------------------------------------------------------------'

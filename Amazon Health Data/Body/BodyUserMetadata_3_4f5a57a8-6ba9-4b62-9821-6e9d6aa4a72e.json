@@ -1,0 +1,18 @@
+{"data": {
+    "roundIdentifier": "axle",
+    "appMetadata": {
+        "appVersion": "1.0.245445.0-Store_64018",
+        "deviceName": "android",
+        "deviceInfo": "SM-G960U"
+    },
+    "study": "axle",
+    "sessionDate": "2020-10-31T20:35:30.113000Z",
+    "sessionUUID": "6e3bb945-cb61-4617-b09f-270676465254",
+    "participantInfo": {
+        "heightInInches": "74.00003",
+        "gender": "male",
+        "ethnicity": ["White"],
+        "weightInPounds": "268.99945",
+        "age": "59"
+    }
+}}
