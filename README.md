@@ -1,5 +1,5 @@
 # halo2df
-loads Amazon Halo user data into Pandas dataframe &amp; runs analyses
+_Loads Amazon Halo user data into Pandas dataframe &amp; runs analysis_
 
 The script will iterate over your personal health data, import each dataset into an appropriate dataframe, and carry out some analysis.
 
