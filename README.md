@@ -26,3 +26,5 @@ Python > 3 and < 3.9 until pandas and matplotlib are stable for Python 3.9 and a
 **halo2df.py**
 
 4. The output will include a wordcloud of your Tone Utterances called ToneUtterancesCloud.png, located in the current directory.
+
+![Tone Utterance](https://github.com/fredzannarbor/halo2df/blob/main/ToneUtterancesCloud.png)
