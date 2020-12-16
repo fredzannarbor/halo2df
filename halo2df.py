@@ -8,20 +8,22 @@ from wordcloud import WordCloud, STOPWORDS
 
 df = pd.DataFrame()
 
+datafiles = {'tone_utterances':'Amazon Health Data/Tone/ToneUtterances*.csv', 'tone_sessions': 'Amazon Health Data/Tone/ToneSessions*.csv', 'activity_daily': 'Amazon Health Data/Activity/Activity_DailyData*.csv', 'activity_raw': 'Amazon Health Data/Activity/Activity_Raw*.csv', 'activity_work': 'Amazon Health Data/Activity/Activity_Work*.csv'}
+
+
+
 # reads csvs into DataFrames
 
-for filepath in glob.iglob(r'Amazon Health Data/Tone/ToneUtterances*.csv'):
-    print(filepath)
-    t = pd.read_csv(filepath)
-    
-for filepath in glob.iglob(r'Amazon Health Data/Tone/ToneSessions*.csv'):
-    print(filepath)
-    s = pd.read_csv(filepath)
-
+dflist = {}
+for x, y in datafiles.items():
+    print(x)
+    print(glob.glob(y)[0])
+    a = glob.glob(y)[0]
+    dflist[x] = pd.read_csv(a)
 
 # reports on each dataframe
 
-text = t['Descriptors'].values
+text = dflist['tone_utterances']['Descriptors'].values
 
 def convertTuple(tup): 
     remove = ['[', ']']
@@ -52,6 +54,6 @@ fig.savefig('ToneUtterancesCloud')
 
 print(' ')
 print('Positivity stats')
-s['Positivity'].hist()
-print(s['Positivity'].describe())
+dflist['tone_sessions']['Positivity'].hist()
+print(dflist['tone_sessions']['Positivity'].describe())
 
