@@ -8,16 +8,18 @@ from wordcloud import WordCloud, STOPWORDS
 
 df = pd.DataFrame()
 
+# reads csvs into DataFrames
+
 for filepath in glob.iglob(r'Amazon Health Data/Tone/ToneUtterances*.csv'):
     print(filepath)
     t = pd.read_csv(filepath)
+    
 for filepath in glob.iglob(r'Amazon Health Data/Tone/ToneSessions*.csv'):
     print(filepath)
     s = pd.read_csv(filepath)
 
 
-print('most powerful descriptor')
-print('read Halo data and created dataframe')
+# reports on each dataframe
 
 text = t['Descriptors'].values
 
@@ -26,7 +28,7 @@ def convertTuple(tup):
     original_string =  ', '.join(tup)
     new_string = original_string
     for character in remove:
-        print(remove)
+        #print(remove)
         new_string = new_string.replace(character, "")
     str = new_string
     return str
@@ -47,3 +49,9 @@ plt.axis('off')
 plt.tight_layout(pad=0)
 plt.show()
 fig.savefig('ToneUtterancesCloud')
+
+print(' ')
+print('Positivity stats')
+s['Positivity'].hist()
+print(s['Positivity'].describe())
+
