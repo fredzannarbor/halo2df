@@ -30,12 +30,12 @@ def convertTuple(tup):
 print(convertTuple(text))
 
 wordcloud = WordCloud(
-    width = 3000,
-    height = 2000,
+    width = 1024,
+    height = 768,
     background_color = 'black',
     stopwords = STOPWORDS).generate(str(text))
 fig = plt.figure(
-    figsize = (40, 30),
+    figsize = (20, 15),
     facecolor = 'k',
     edgecolor = 'k')
 plt.imshow(wordcloud, interpolation = 'bilinear')
