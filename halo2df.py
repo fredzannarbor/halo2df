@@ -11,8 +11,12 @@ df = pd.DataFrame()
 for filepath in glob.iglob(r'Amazon Health Data/Tone/ToneUtterances*.csv'):
     print(filepath)
     t = pd.read_csv(filepath)
-    print(t)
+for filepath in glob.iglob(r'Amazon Health Data/Tone/ToneSessions*.csv'):
+    print(filepath)
+    s = pd.read_csv(filepath)
 
+
+print('most powerful descriptor')
 print('read Halo data and created dataframe')
 
 text = t['Descriptors'].values
@@ -27,7 +31,7 @@ def convertTuple(tup):
     str = new_string
     return str
 
-print(convertTuple(text))
+#print(convertTuple(text))
 
 wordcloud = WordCloud(
     width = 1024,
